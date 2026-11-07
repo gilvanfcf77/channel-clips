@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | clips</title>
+  <meta name="description" content="How the clips API client accesses, uses, stores and deletes YouTube data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./">clips</a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective date: November 7, 2026</p>
+
+    <p>
+      This policy describes how <strong>clips</strong> (the "API client"), a personal Google Cloud
+      project operated by Gilvan Ferreira Costa Filho, accesses, uses, stores and deletes data when it uses
+      <strong>YouTube API Services</strong>. The API client is used with
+      <a href="https://github.com/ColinGPT9/clips-studio">Clips Kitty</a>, an open-source desktop
+      application that runs on my own computer.
+    </p>
+
+    <h2>YouTube API Services and Google Privacy Policy</h2>
+    <p>
+      This API client uses YouTube API Services. By using it, you agree to be bound by the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Data obtained through
+      YouTube API Services is also subject to the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+      (<code>https://policies.google.com/privacy</code>).
+    </p>
+
+    <h2>Who uses this API client</h2>
+    <p>
+      The API client is used only by me, to publish videos to my own YouTube channel. It is not
+      offered to the public, and no other person's account or data is accessed through it.
+    </p>
+
+    <h2>What data is accessed</h2>
+    <p>When I connect my YouTube account through Google sign-in (OAuth 2.0), the API client requests these permissions:</p>
+    <ul>
+      <li><code>youtube.upload</code>: to upload videos to my channel.</li>
+      <li><code>youtube.readonly</code>: to read which channel is connected and to confirm the privacy status YouTube applied to each upload.</li>
+      <li><code>youtube</code> (only if playlist support is turned on): to add uploaded videos to my playlists.</li>
+    </ul>
+    <p>The data accessed is limited to:</p>
+    <ul>
+      <li>The connected channel's ID and name.</li>
+      <li>The ID, title, description and privacy status of videos uploaded through the API client.</li>
+      <li>The OAuth access and refresh tokens issued by Google.</li>
+    </ul>
+    <p>No data about other channels, viewers, comments, subscribers or analytics is accessed.</p>
+
+    <h2>How the data is used</h2>
+    <p>
+      The data is used only to upload my videos, to show which channel is connected, and to confirm
+      that each upload succeeded with the intended privacy status. It is not used for advertising,
+      profiling, analytics or any other purpose.
+    </p>
+
+    <h2>How the data is stored</h2>
+    <ul>
+      <li>All data stays on my own computer. There is no server, cloud database or backup service involved.</li>
+      <li>OAuth tokens are stored encrypted with Windows Data Protection (DPAPI), tied to my Windows user account.</li>
+      <li>The connected channel and upload records are kept in a local database used by the application.</li>
+    </ul>
+
+    <h2>How the data is shared</h2>
+    <p>
+      The data is not shared with, sold to or transferred to any third party. Videos go directly from
+      my computer to YouTube. No internal or external party receives data from the API client.
+    </p>
+
+    <h2>Cookies and tracking</h2>
+    <p>
+      The API client does not use cookies, tracking technologies or third-party analytics, and it does
+      not store or read information on any user's device or browser beyond the local files described above.
+    </p>
+
+    <h2>Deleting data and revoking access</h2>
+    <ul>
+      <li>Access can be revoked at any time on the Google security settings page:
+        <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
+      <li>Disconnecting YouTube inside the application deletes the stored tokens and asks Google to revoke them.</li>
+      <li>Local data can be deleted by removing the application's data folder.</li>
+      <li>Stored YouTube data is kept only while the account is connected. When I stop using the API client, I disconnect it and delete the local data.</li>
+      <li>To request deletion or ask a question, contact me at the address below. Requests are answered within 7 days.</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the effective date at the top of this page will be updated.</p>
+
+    <h2>Contact</h2>
+    <p>Gilvan Ferreira Costa Filho<br><a href="mailto:gilvanfcf77@gmail.com">gilvanfcf77@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="./">Home</a> ·
+    <a href="terms.html">Terms of Service</a> ·
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+  </footer>
+</body>
+</html>
