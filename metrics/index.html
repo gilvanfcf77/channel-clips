@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>metricas | Personal YouTube Analytics Reader</title>
-  <meta name="description" content="A personal, non-commercial script that reads analytics for my own YouTube channels using YouTube API Services.">
+  <meta name="description" content="A personal, non-commercial script that reads analytics for my own YouTube channels and searches public YouTube data to choose content, using YouTube API Services.">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -22,19 +22,25 @@
       <strong>metricas</strong> is a personal Google Cloud project, separate from the
       <a href="../">clips</a> uploader. It is used by a script that runs on my own computer to read
       performance reports (views, watch time, engagement and estimated revenue) for the YouTube
-      channels I own, so I can compare how my videos perform.
+      channels I own, so I can compare how my videos perform. It also searches public YouTube data
+      (public videos, channels and comments) to help me choose which public conversations, such as
+      podcasts and interviews, to feature on my channels.
     </p>
 
     <h2>What it does</h2>
     <ul>
-      <li>Reads analytics and basic video information for my own channels only.</li>
+      <li>Reads analytics and basic video information for my own channels.</li>
+      <li>Searches and reads public information about other creators' videos, channels and comments
+        (titles, dates, durations, public view counts and public comments), the same information anyone
+        can see on YouTube, only to choose content.</li>
       <li>Is read-only: it never uploads, edits or deletes anything on YouTube.</li>
       <li>Saves the reports as local files on my computer.</li>
     </ul>
 
     <h2>Who uses it</h2>
     <p>
-      Only me. It is not offered to the public, and no other person's account or data is accessed.
+      Only me. It is not offered to the public. It never signs in to any account other than my own,
+      and it reads other creators' information only when that information is already public.
     </p>
 
     <p>

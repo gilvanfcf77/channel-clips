@@ -18,7 +18,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective date: November 21, 2026</p>
+    <p class="muted">Effective date: November 21, 2026 (updated November 21, 2026)</p>
 
     <p>
       This policy describes how <strong>metricas</strong> (the "API client"), a personal Google Cloud
@@ -37,33 +37,46 @@
 
     <h2>Who uses this API client</h2>
     <p>
-      The API client is used only by me, to read reports about the YouTube channels I own. It is not
-      offered to the public, and no other person's account or data is accessed through it.
+      The API client is used only by me, to read reports about the YouTube channels I own and to search
+      public YouTube data when choosing content for those channels. It is not offered to the public, and
+      it never signs in to any account other than my own.
     </p>
 
     <h2>What data is accessed</h2>
     <p>When I connect one of my channels through Google sign-in (OAuth 2.0), the API client requests these read-only permissions:</p>
     <ul>
-      <li><code>youtube.readonly</code>: to read the connected channel's name and ID and the list, titles and publish dates of its videos.</li>
+      <li><code>youtube.readonly</code>: to read the connected channel's name and ID and the list, titles and publish dates of its videos; and to search and read public YouTube data, as described below.</li>
       <li><code>yt-analytics.readonly</code>: to read the channel's YouTube Analytics reports (views, watch time, audience retention, likes, comments, shares, subscribers gained and lost, traffic sources).</li>
       <li><code>yt-analytics-monetary.readonly</code>: to read estimated revenue and ad performance reports for channels in the YouTube Partner Program.</li>
     </ul>
     <p>
-      Analytics reports are aggregated by YouTube and do not identify individual viewers. The API client
-      does not access comments' content, viewer identities, private messages or any channel I do not own.
+      Analytics reports are aggregated by YouTube and do not identify individual viewers.
+    </p>
+    <h3>Public data from other channels</h3>
+    <p>
+      To choose content, the API client also searches YouTube and reads <strong>public</strong> information
+      about other creators' videos and channels: titles, descriptions, publish dates, durations, public view,
+      like and comment counts, and public comments (for example, comments that point to a moment of a video
+      with a timestamp). This is the same information anyone can see on YouTube. The API client never reads
+      private data, analytics or revenue of channels I do not own, and it does not build profiles of the
+      people who write comments.
     </p>
 
     <h2>How the data is used</h2>
     <p>
-      The data is used only to compare the performance of my own videos and channels and to plan my
-      content. It is not used for advertising, profiling of people, or any other purpose.
+      Data about my own channels is used to compare the performance of my videos and to plan my content.
+      Public data from other channels is used only to decide which public videos, such as podcasts and
+      interviews, are worth featuring on my channels and which moments of them to feature. No data is used
+      for advertising, profiling of people, or any other purpose.
     </p>
 
     <h2>How the data is stored</h2>
     <ul>
       <li>All data stays on my own computer. There is no server, cloud database or backup service involved.</li>
       <li>OAuth tokens are stored in a local file accessible only to my Windows user account.</li>
-      <li>Reports are kept as local files (spreadsheets, a local database and text summaries).</li>
+      <li>Reports about my own channels are kept as local files (spreadsheets, a local database and text summaries).</li>
+      <li>Public data from other channels is kept only while I evaluate it and is deleted or refreshed within
+        30 days. What I keep afterwards is my own note of which videos I chose (for example, a link and a title).</li>
     </ul>
 
     <h2>How the data is shared</h2>
